@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/desc_card"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/borderColor"
+        app:strokeWidth="1.4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/current_wall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/wall"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wall_applied_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Home and Lockscreen"
+                android:textColor="@color/textTitleColor"
+                android:textSize="5pt"
+                app:layout_constraintBottom_toTopOf="@+id/wall_collection"
+                app:layout_constraintStart_toEndOf="@+id/current_wall"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/wall_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Astronomical Ahegao"
+                android:textColor="@color/textDescColor"
+                android:textSize="5pt"
+                app:layout_constraintBottom_toTopOf="@+id/wall_author"
+                app:layout_constraintStart_toStartOf="@+id/wall_applied_to"
+                app:layout_constraintTop_toBottomOf="@+id/wall_applied_to" />
+
+            <TextView
+                android:id="@+id/wall_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raphielscape, Living in hentai"
+                android:textColor="@color/textDescColor"
+                android:textSize="5pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/wall_collection"
+                app:layout_constraintTop_toBottomOf="@+id/wall_collection" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,10 +5,10 @@
     <color name="colorAccent">#03DAC5</color>
 
     <!-- Custom colors -->
-    <color name="borderColor">#CFCFCF</color>
-    <color name="headerColor">#4D4D4D</color>
-    <color name="textTitleColor">#4D4D4D</color>
+    <color name="borderColor">#3B3F42</color>
+    <color name="headerColor">#A7A9AD</color>
+    <color name="textTitleColor">#9EA0A4</color>
     <color name="textDescColor">#696969</color>
-    <color name="textFolderName">#4D4D4D</color>
+    <color name="textFolderName">#D9D9D9</color>
 
 </resources>

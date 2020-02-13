@@ -1,6 +1,9 @@
 package com.hentaios.walls.models
 
-data class Collection(
+import androidx.annotation.Keep
+
+@Keep
+data class WallCollection(
     var name: String,
     var wallpapers: List<Wallpaper>
 )

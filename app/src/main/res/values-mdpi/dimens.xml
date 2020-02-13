@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wall_item_width">75dp</dimen>
+    <dimen name="wall_item_height">120dp</dimen>
+    <dimen name="general_padding">24dp</dimen>
+</resources>

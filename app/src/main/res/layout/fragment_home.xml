@@ -73,7 +73,19 @@
                 app:layout_constraintTop_toBottomOf="@+id/wall_collection" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collection_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/desc_card"
+        app:layout_constraintStart_toStartOf="@+id/desc_card"
+        app:layout_constraintTop_toBottomOf="@+id/desc_card"
+        tools:listitem="@layout/wall_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

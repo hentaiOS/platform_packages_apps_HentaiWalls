@@ -8,13 +8,13 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.hentaios.walls.R
-import com.hentaios.walls.models.Collection
+import com.hentaios.walls.models.WallCollection
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.wall_item.*
 
 class WallAdapter(private val context: Context) :
     RecyclerView.Adapter<WallAdapter.WallViewHolder>() {
-    private var collectionList: List<Collection> = mutableListOf()
+    private var collectionList: List<WallCollection> = mutableListOf()
 
 
     class WallViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView),
@@ -39,7 +39,7 @@ class WallAdapter(private val context: Context) :
         holder.collection_name.text = item.name
     }
 
-    fun updateData(newData: List<Collection>) {
+    fun updateData(newData: List<WallCollection>) {
         collectionList = newData
         notifyDataSetChanged()
     }

@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 
 import com.hentaios.walls.R
 import com.hentaios.walls.adapters.WallAdapter
-import com.hentaios.walls.models.Collection
+import com.hentaios.walls.models.WallCollection
 import com.hentaios.walls.models.Wallpaper
 import com.hentaios.walls.utils.GridSpacingItemDecoration
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -34,12 +34,12 @@ class HomeFragment : Fragment() {
         collection_recyclerview.layoutManager = layoutManager
 
         val list = listOf(
-            Collection("Ahegao", listOf(Wallpaper("https://i.ibb.co/b25VFdB/wall.png", "Raphielscape"))),
-            Collection("NTR", listOf(Wallpaper("https://i.imgur.com/GL7igry.png", "Raphielscape"))),
-            Collection("Living in hentai", listOf(Wallpaper("https://i.imgur.com/XULiMJ5.jpg", "Raphielscape"))),
-            Collection("Lewds", listOf(Wallpaper("https://i.imgur.com/ZBk3W8l.jpg", "Raphielscape"))),
-            Collection("Waifus", listOf(Wallpaper("https://i.imgur.com/kZPEccB.jpg", "Raphielscape"))),
-            Collection("Mind Break", listOf(Wallpaper("https://i.imgur.com/O5mO0wh.jpg", "Raphielscape")))
+            WallCollection("Ahegao", listOf(Wallpaper("https://i.ibb.co/b25VFdB/wall.png", "Raphielscape"))),
+            WallCollection("NTR", listOf(Wallpaper("https://i.imgur.com/GL7igry.png", "Raphielscape"))),
+            WallCollection("Living in hentai", listOf(Wallpaper("https://i.imgur.com/XULiMJ5.jpg", "Raphielscape"))),
+            WallCollection("Lewds", listOf(Wallpaper("https://i.imgur.com/ZBk3W8l.jpg", "Raphielscape"))),
+            WallCollection("Waifus", listOf(Wallpaper("https://i.imgur.com/kZPEccB.jpg", "Raphielscape"))),
+            WallCollection("Mind Break", listOf(Wallpaper("https://i.imgur.com/O5mO0wh.jpg", "Raphielscape")))
         )
 
         adapter.updateData(list)
